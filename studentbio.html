@@ -2,30 +2,89 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<title>Student Bio</title>				
+		<title>Student Bio</title>	
+		<style>
+			body {
+				background-color: #ffd8d8;
+				margin: 0;
+				padding: 0;
+				font-family: "Georgia", "Times New Roman", Times, serif;
+				font-size: 20px;
+				line-height: 150%;
+
+			}
+
+			h1 {
+				color: #ffffff;
+				background-color: #000000;
+				text-align: center;
+				padding-top: 20px;
+				padding-bottom: 20px;
+				margin: 0;
+				font-size: 40px;
+			}
+
+			h2 {
+				font-size: 30px;
+			}
+
+			a {
+				color: #195975;
+			}
+
+			.container {
+				width: 1024px;
+				margin: 0 auto;
+			}
+
+			#mainBio,
+			#bioPic,
+			#contactInfo {
+				float: left;
+			}
+
+			#bioPic {
+				width: 200px;
+				height: 200px;
+				margin-right: 30px;
+			}
+
+			#mainBio {
+				width: 60%;
+			}
+
+			#contactInfo {
+				width: 40%;
+			}
+
+		</style>			
 	</head>
 	<body>
 		<header>
 			<h1>Student Bio</h1>
 		</header>
 		
-		<section>
-			<h2>Ricky Grams</h2>
+		<div class="container">
 
-			<img src="https://avatars3.githubusercontent.com/u/23466205?v=3&s=460" alt="My pic" >
+			<section id="mainBio">
+				<h2>Ricky Grams</h2>
 
-			<p>My name is Ricky Grams and I'm currently an analytical chemist working in the environmental testing industry and I'm looking for a career change into the tech industry.</p>
-		</section>
+				<img src="https://avatars3.githubusercontent.com/u/23466205?v=3&s=460" alt="My pic" id="bioPic">
 
-		<section>
-		<strong><h3>Contact Info</h3></strong>
+				<p>My name is Ricky Grams and I'm currently an analytical chemist working in the environmental testing industry and I'm looking for a career change into the tech industry.</p>
+			</section>
 
-		<ul>
-			<li><strong>Email: <a href="rickygrams@me.com">rickygrams@me.com</a>
-			<li><strong>Github: <a href="https://github.com/rixgithub">rixgithub</a>
-			<li><strong>Portfolio: <a href="#">coming soon</a></strong>
-		</ul>
-		</section>
+			<section id="contactInfo">
+				<strong><h3>Contact Info</h3></strong>
+
+				<ul>
+					<li><strong>Email: <a href="rickygrams@me.com">rickygrams@me.com</a>
+					<li><strong>Github: <a href="https://github.com/rixgithub">rixgithub</a>
+					<li><strong>Portfolio: <a href="#">coming soon</a></strong>
+				</ul>
+			</section>
+
+		</div>
 	
 	</body>
 </html>
